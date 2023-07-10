@@ -40,7 +40,7 @@ jobs:
         uses: actions/download-artifact@v3.0.0   
         with:
           name: build  
-      - name: deploy to surge:
+      - name: deploy to surge
         run: npx surge --project '.' --domain totallymootpoint.surge.sh   
         env: 
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}   
